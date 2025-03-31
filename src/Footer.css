@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    background-color: #14532d; /* Mørkegrøn */
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-column {
+    margin-bottom: 1rem;
+}
+
+.footer h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Logo styling */
+.footer-logo img {
+    height: 60px;
+}
+
+/* Gør footeren responsiv */
+@media (min-width: 950px) {
+    .footer-container {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .footer-column {
+        margin-bottom: 0;
+    }
+
+    .footer-logo {
+        flex-grow: 1;
+        text-align: center;
+    }
+}

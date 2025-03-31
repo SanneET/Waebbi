@@ -5,13 +5,13 @@ export default function Header() {
         <header>
             <nav style={{display: "flex", gap: "20px"}}>
                 <p>
-                    <Link to="">Home</Link>
+                    <Link to="">Service</Link>
                 </p>
                 <p>
-                    <Link to="first"></Link>
+                    <Link to="first">Vores Værdier</Link>
                 </p>
                 <p>
-                    <Link to="second"></Link>
+                    <Link to="second">Kontakt</Link>
                 </p>
             </nav>
         </header>
