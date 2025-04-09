@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0%;
+  padding: 0;
+  color: #333;
+}
+main {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  padding: 50px 20px;
+  margin-top: 3%;
+
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 span {
+  color: green;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 6%;
+  
+}
+
+/*styrk din digitale webløsning*/
+.broedtekst {
+  font-size: 1.2rem;
+  padding-bottom: 1%;
+}
+
+.h2header {
+  font-size: 3rem;
+  padding-bottom: 1%;
+  color: #2C3E16;
+}
+
+/*info box*/
+.infobox {
+  text-align: center;
+  padding: 40px;
+  color: #2C3E16
+}
+.infobox h2 {
+  font-size: 3rem;
+  color: #2C3E16
+}
+.flex {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+/*maskot*/
+.maskot {
+  width: 10%; 
+  height: auto;
+}
+
+/* Standard billede vises (desktop version) */
+.hero-image .desktop-image {
+  display: block;
+}
+
+/* Skjuler mobilbilledet som standard */
+.hero-image .mobile-image {
+  display: none;
+}
+
+/* Når skærmen er mindre end 1000px */
+@media (max-width: 1000px) {
+  .hero-image .desktop-image {
+    display: none;
+  }
+
+  .hero-image .mobile-image {
+    display: block;
+  }
+}
+

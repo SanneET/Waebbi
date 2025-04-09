@@ -1,0 +1,32 @@
+
+/* Container med flex layout */
+.byggesten-cards {
+    display: flex;
+    flex-wrap: wrap; /* Gør dem responsive */
+    gap: 1.5rem;
+    justify-content: center; /* Eller space-between for fuld række */
+    padding: 1rem 0;
+  }
+  
+  /* Hver enkelt byggesten-kort */
+  .byggesten {
+    background-color: #ABB2A2;
+    border-radius: 12px;
+    padding: 2rem;
+    flex: 1 1 250px;
+    max-width: 300px;
+    min-width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+  }
+  
+  .byggesten:hover {
+    transform: translateY(-5px);
+}
+  
+  /* Titel i kortet */
+  .byggesten h3 {
+    font-size: 1.2rem;
+    color: #1e1e1e;
+  }

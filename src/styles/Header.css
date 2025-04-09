@@ -1,0 +1,178 @@
+/* ========== HEADER ========== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    background-color: white;
+}
+
+/* Logo centreret */
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 2%;
+    margin-top: 3%;
+    
+}
+
+.logo a {
+    color: #2C3E16;
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Burger-menu knap */
+.menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Sørg for, at SVG'en vises */
+.menu-toggle svg {
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+/* Navigation */
+.nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+/* Når menuen er åben */
+.nav.open {
+    right: 0;
+}
+
+/* Links */
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+    padding-top: 3%; /* space mellem linkene*/
+    font-family: "Poppins", sans-serif;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Overlay bag navigation */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* ========== BURGERMENU KNAP ========== */
+.menu-toggle {
+    position: absolute;
+    width: 55px;  
+    height: 55px;
+    margin-top: 3%;
+    background-color: #2C3E16;  
+    border-radius: 50%;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    padding: 10px;  
+    margin-right: 5%; /* Giver ekstra luft omkring */
+}
+
+/* Sørger for, at SVG-ikonet ikke fylder hele knappen */
+.menu-toggle svg {
+    width: 30px;
+    height: 30px;
+    fill: white; /* Ingen baggrundsfarve */
+}
+
+
+/*Break points*/
+
+@media (max-width: 1500px) {
+    .menu-toggle {
+        width: 50px;
+        height: 50px;
+        margin-top: 4%;
+      }
+    
+      .menu-toggle svg {
+        width: 25px;
+        height: 25px;
+      }
+    
+      .logo {
+        padding-top: 4%;
+      }
+
+    
+}
+
+@media (max-width: 800px) {
+    .menu-toggle {
+        width: 50px;
+        height: 50px;
+        margin-top: 5%;
+      }
+    
+      .menu-toggle svg {
+        width: 25px;
+        height: 25px;
+      }
+    
+      .logo {
+        padding-top: 8%;
+      }
+
+    
+}
+
+@media (max-width: 600px) {
+    .menu-toggle {
+        width: 40px;
+        height: 40px;
+        margin-top: 8%;
+      }
+    
+      .menu-toggle svg {
+        width: 25px;
+        height: 25px;
+      }
+    
+      .logo {
+        padding-top: 12%;
+      }
+
+    
+}

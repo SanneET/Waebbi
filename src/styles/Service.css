@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+/*Header styling*/
+.h2header {
+    margin-top: 6%;
+    font-size: 3rem;
+    padding-bottom: 1%;
+    color: #2C3E16;
+}
+
+/*brødtekst styling*/
+.brødtekst {
+    font-size: 1.2rem;
+    padding-bottom: 1%;
+  }
+/*maskot*/
+.maskot {
+    width: 20%; 
+    height: auto;
+}
+.pakkeloesninger {
+    text-align: center;
+    padding: 40px;
+    color: #2C3E16
+}
+
+/* Example CSS for the button */
+.contact-btn {
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  
+  .btn-contact {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #2C3E16; /* Adjust color */
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .btn-contact:hover {
+    background-color: #2c3e168a; /* Darker green on hover */
+  }
+
+@media (max-width: 1000px) {
+    .h2header { 
+    margin-top: 10%;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .h2header { 
+        margin-top: 20%;
+    }
+}
+
+@media (max-width: 200px) {
+    .h2header { 
+        margin-top: 10%;
+        }
+}

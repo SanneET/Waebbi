@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    background-color: #2C3E16; /* Mørkegrøn */
+    color: white;
+    padding: 2rem 0;
+    margin-top: 5%;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0;
+}
+
+.footer-column {
+    margin-bottom: 1rem;
+    flex: 1;
+}
+
+.footer h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Logo styling */
+.footer-logo img {
+    height: 100px;
+}
+.footer-container {
+    flex-direction: row;
+    text-align: left;
+}
+
+
+
+.footer-logo {
+    flex-grow: 2;
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    .footer {
+        margin-top: 18%;
+    }
+
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+      
+    }
+  
+    .footer-column {
+      margin-bottom: 1rem;
+    }
+  
+    .footer-logo {
+        order: -1; /* Flytter logoet op først */
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        margin-top: 100%;
+    }
+}
+
+@media (max-width: 200px) {
+    .footer {
+        margin-top: 70%;
+    }
+}

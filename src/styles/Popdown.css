@@ -1,0 +1,44 @@
+.popdown-item {
+    border: 1px solid #2c3e167c;
+    border-radius: 8px;
+    margin: 8px 0;
+    overflow: hidden;
+}
+
+.popdown-header {
+    background-color: #2c3e167c;
+    padding: 16px;
+    cursor: pointer;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold; /* Gør headeren fed */
+}
+
+.popdown-content {
+    padding: 16px;
+    background-color: #2c3e167c;
+    color: black;
+    padding-top: 24px; /* Giver ekstra luft øverst i indholdet */
+}
+
+.popdown-title {
+    font-size: 1.5rem; /* Justerer størrelsen på titlen */
+    font-weight: bold;
+    margin-bottom: 16px; /* Giver luft under titlen */
+}
+
+.popdown-price {
+    margin-top: 20px; /* Giver luft før prisen */
+    font-size: 1.2rem; /* Gør prisen lidt større */
+    font-weight: bold; /* Gør prisen fed */
+    color: black; /* Ændre farven på prisen til en grøn */
+}
+
+ul {
+    padding-left: 20px; /* Indrykning af listen */
+    margin-bottom: 16px; /* Giver luft efter listen */
+}
+
+li {
+    margin-bottom: 8px; /* Giver luft mellem hvert punkt i listen */
+}

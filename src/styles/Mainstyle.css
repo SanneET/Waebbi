@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    flex: 1; /* <--- gør at main fylder resten af siden og skubber footer ned */
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 0;
+}
+
+.h2header{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+
+.broedtekst{
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/*Istock billeder*/
+.istock p {
+    font-size: 0.8rem;
+}
